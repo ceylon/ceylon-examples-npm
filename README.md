@@ -26,7 +26,6 @@ which automatically calls `npm` to install the dependencies.
 
 Run the examples using
 
+    ceylon run-js -x runXmlParser eg.npm
     ceylon run-js -x runHtmlRequest eg.npm
-
-changing `runHtmlRequest` to the name of the example 
-function you wish to run.
+    ceylon run-js -x runCommander eg.npm --pineapple --cheese parmesan
