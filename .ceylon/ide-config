@@ -1,0 +1,5 @@
+
+[project]
+compile-jvm=false
+compile-js=true
+system-repository=
