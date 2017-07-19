@@ -1,9 +1,11 @@
-import commander { Command }
+import commander { command }
 
 shared void runCommander() {
     dynamic {
 
-        dynamic program = Command;
+        dynamic program = command;
+
+        console.dir(program);
 
         program.version("0.1.0");
         program.option("-p, --peppers", "Add peppers");
