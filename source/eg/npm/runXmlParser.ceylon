@@ -4,7 +4,7 @@ String xml = "<root><message>Hello Ceylon!</message></root>";
 
 shared void runXmlParser() {
     dynamic {
-        parseXml(xml, (dynamic err, dynamic result) {
+        parseXml(xml, (err, result) {
             print(result.root.message);
         });
     }

@@ -11,8 +11,7 @@ shared void runHtmlRequest() {
                     define = dynamic [ request = client; ];
                 ]);
 
-        request.get("https://ceylon-lang.org/",
-                (dynamic err, dynamic res, dynamic body) {
+        request.get("https://ceylon-lang.org/", (err, res, body) {
             print(res.statusMessage);
             dynamic root = parseHtml(body);
             dynamic title = root.querySelector("head title").text;
